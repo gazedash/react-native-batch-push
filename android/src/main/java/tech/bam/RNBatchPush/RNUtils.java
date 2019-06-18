@@ -1,6 +1,5 @@
 package tech.bam.RNBatchPush;
 
-import android.support.annotation.Nullable;
 import android.util.Log;
 
 import com.batch.android.BatchEventData;
@@ -70,8 +69,7 @@ public class RNUtils {
         return output;
     }
 
-    @Nullable
-    public static BatchEventData convertSerializedEventDataToEventData(@Nullable ReadableMap serializedEventData) {
+    public static BatchEventData convertSerializedEventDataToEventData(ReadableMap serializedEventData) {
         if (serializedEventData == null) {
             return null;
         }
